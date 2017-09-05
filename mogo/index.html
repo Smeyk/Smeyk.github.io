@@ -7,7 +7,7 @@
 
 	<title>Mogo</title>
 	<meta name="description" content="">
-
+	
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -16,7 +16,7 @@
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
-
+	
 	<!-- Chrome, Firefox OS and Opera -->
 	<meta name="theme-color" content="#000">
 	<!-- Windows Phone -->
@@ -25,18 +25,18 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
 	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
-
+	<link rel="stylesheet" href="css/main.min.css">
 </head>
 
 <body>
 
 <!-- 	Start Header -->
 	<heder class="header">
-		<div class="header-main_bg" style="background-image: url(img/main-bg.png);">
+		<div class="header-main_bg">
 			<div class="container">
 				
 				<div class="header-top_line">
-					<div class="logo"><img src="img/logo.png" alt=""></div>
+					<a href="#"><div class="logo"><img src="img/logo.png" alt=""></div></a>
 					<div class="wrap">
 						<nav>
 							<ul>
@@ -47,14 +47,14 @@
 								<li><a href="#">contact</a></li>
 							</ul>
 						</nav>
-						<div class="basket"><svg width="15px" height="15px" version="1.1" viewBox="0 0 510 510" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+						<a href="#"><div class="basket"><svg width="15px" height="15px" version="1.1" viewBox="0 0 510 510" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
 						<path d="m153 408c-28.05 0-51 22.95-51 51s22.95 51 51 51 51-22.95 51-51-22.95-51-51-51zm-153-408v51h51l91.8 193.8-35.7 61.2c-2.55 7.65-5.1 17.85-5.1 25.5 0 28.05 22.95 51 51 51h306v-51h-295.8c-2.55 0-5.1-2.55-5.1-5.1v-2.551l22.95-43.35h188.7c20.4 0 35.7-10.2 43.35-25.5l91.8-165.75c5.1-5.1 5.1-7.65 5.1-12.75 0-15.3-10.2-25.5-25.5-25.5h-377.4l-22.95-51h-84.15zm408 408c-28.05 0-51 22.95-51 51s22.95 51 51 51 51-22.95 51-51-22.95-51-51-51z"/>
-						</svg></div>
-						<div class="search"><svg width="15px" height="15px" version="1.1" viewBox="0 0 485.213 485.213" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+						</svg></div></a>
+						<a href="#"><div class="search"><svg width="15px" height="15px" version="1.1" viewBox="0 0 485.213 485.213" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
 						<path d="m471.88 407.57l-111.32-111.32c-16.586 25.795-38.536 47.734-64.331 64.321l111.32 111.32c17.772 17.768 46.587 17.768 64.321 0 17.773-17.739 17.773-46.554 1e-3 -64.321z"/>
 						<path d="m363.91 181.96c0-100.48-81.469-181.96-181.95-181.96-100.48 0-181.96 81.473-181.96 181.96s81.473 181.95 181.96 181.95c100.48 0 181.95-81.469 181.95-181.95zm-181.95 136.46c-75.252 0-136.46-61.208-136.46-136.46s61.213-136.46 136.46-136.46c75.25 0 136.47 61.213 136.47 136.46s-61.218 136.46-136.47 136.46z"/>
 						<path d="m75.817 181.96h30.322c0-41.803 34.014-75.814 75.816-75.814v-30.325c-58.517 0-106.14 47.621-106.14 106.14z"/>
-						</svg></div>
+						</svg></div></a>
 					</div>
 				</div>
 			
@@ -86,7 +86,12 @@
 		<h2>story about us</h2>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore debitis provident nostrum quo fugit beatae nobis autem itaque, aut distinctio, non suscipit corporis, pariatur voluptatem dolores quae dolor quisquam! Excepturi!</p>
 		<div class="about-items">
-			<div class="item"><img src="img/1.png" alt=""></div>
+			<div class="item">
+			<div class="item-hover">
+				<img src="img/icon-team.png" alt="">
+				<p>super team</p>
+			</div>
+			<img src="img/1.png" alt=""></div>
 			<div class="item"><img src="img/2.png" alt=""></div>
 			<div class="item"><img src="img/3.png" alt=""></div>
 		</div>
@@ -109,7 +114,7 @@
 
 <!-- end Section Number -->
 	
-	<link rel="stylesheet" href="css/main.min.css">
+	
 	<script src="js/scripts.min.js"></script>
 
 </body>
