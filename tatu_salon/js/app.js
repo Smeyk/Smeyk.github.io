@@ -335,7 +335,7 @@ let first_slider = new Swiper('.first-slider__body', {
 	loop: true,
 	navigation: false,
 	autoplay: true,
-	autoplaySpeed: 3000,
+	autoplaySpeed: 20000,
 	//touchRatio: 0,
 	//simulateTouch: false,
 	//loop: true,
@@ -401,7 +401,7 @@ let second_slider = new Swiper('.second-slider__body', {
 	loop: true,
 	navigation: false,
 	autoplay: true,
-	autoplaySpeed: 3000,
+	autoplaySpeed: 20000,
 	//touchRatio: 0,
 	//simulateTouch: false,
 	//loop: true,
@@ -522,12 +522,30 @@ if (iconMenu != null) {
 		}
 	});
 };
+
 function menu_close() {
 	let iconMenu = document.querySelector(".icon-menu");
 	let menuBody = document.querySelector(".menu__body");
 	iconMenu.classList.remove("_active");
 	menuBody.classList.remove("_active");
 }
+
+let menuBody = document.querySelector(".menu__body");
+let menuLinks = document.querySelectorAll('.menu__link');
+menuLinks.forEach(function (menuLink) {
+	menuLink.addEventListener('click', () => {
+		iconMenu.classList.remove('_active');
+		menuBody.classList.remove('_active');
+	});
+});
+
+
+
+
+
+
+
+
 //=================
 //BodyLock
 function body_lock(delay) {
@@ -668,11 +686,12 @@ function gallery_init() {
 		const el = gallery[index];
 		lightGallery(el, {
 			counter: false,
-			selector: 'a',
+			selector: '.gallery__hover',
 			download: false
 		});
 	}
 }
+
 //=================
 //SearchInList
 function search_in_list(input) {
